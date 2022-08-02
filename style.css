@@ -1,4 +1,34 @@
-.box {
+* 
+{
+    background-color: rgb(178, 233, 106);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.buttons
+{
+display: flex;
+justify-content: center;
+gap: 5px;
+margin: 1px;
+}
+
+.buttons button:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    filter: brightness(120%);
+  }
+
+.buttons button:focus{
+    background:white;
+}
+
+.box 
+{
 height: 30px;
 width: 30px;
 border: black 1px solid;
@@ -6,15 +36,23 @@ background-color: white;
 
 }
 
-.row {
+.row 
+{
     display: flex;
 }
 
-#container {
-
-Height: 980px;
-Width: 980px;
-display: block;
+#container 
+{
+    display: grid;
+    height: 640px;
+    width: 640px;
+    z-index: 100;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    border: 6px solid black;
 
 }
 
