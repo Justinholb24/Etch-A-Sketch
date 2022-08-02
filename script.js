@@ -3,10 +3,8 @@ const gridSize = 20;
 function changeSize() {
     const gridSize = prompt("How many rows/columns would you like?");  
     removeAllGridCells()  
-    makeBlocks(gridSize);
-    
+    makeBlocks(gridSize);    
 }
-
 
 function makeBlocks(gridSize) {
     for (var i = 0; i < gridSize; i++) {
@@ -18,9 +16,7 @@ function makeBlocks(gridSize) {
             row.appendChild(box);
         }                
         document.getElementById('container').appendChild(row);
-    }
-
-    
+    }    
 }
 
 makeBlocks(gridSize);
@@ -33,14 +29,12 @@ boxes.forEach(box => {
       box.setAttribute('style', 'background-color: black;');
     });
   });
-
   
   function reset() {
     boxes.forEach(box => {
         box.setAttribute('style', 'background-color: white;')
     })
   }
-
 
   function removeAllGridCells() {
     while (container.firstChild) {
@@ -57,7 +51,6 @@ function rainbowMode() {
             box.style.background = RGB;
     }))
 }
-
 
 function blackMode() {
     const boxes = document.querySelectorAll('.box')
